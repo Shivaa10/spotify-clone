@@ -42,15 +42,15 @@ nav ul li{
 .container{
     min-height: 90vh;
     background-color: black;
-    color: rgb(14, 15, 15);
+    color: rgb(239, 243, 243);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     width: 70%;
     margin: 23px auto;
     border-radius: 12px;
     padding: 34px;
-    background-image: url("bg.jpg");
-    background-size:auto;
+    background-image: url("bg1.jpg");
+    background-size:cover;
 
 }
 .bottom{
@@ -74,6 +74,11 @@ nav ul li{
     width: 80vw;
     text-align: center;
 }
+
+.songItemContainer{
+
+    margin-top: 70px;
+}
 .songItem{
     height:50px;
     display: flex;
@@ -84,14 +89,21 @@ nav ul li{
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
+    margin: 10px 00px;
 
 }
 
 .songItem img{
-    width: 23px;
+    width: 35px;
     margin: 0 23px;
+    border-radius: 39px;
 
 }
 .timestamp{
     margin: 0 23px;
+    
+}
+.timestamp i{
+    cursor: pointer;
+    
 }
