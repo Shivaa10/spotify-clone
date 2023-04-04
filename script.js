@@ -6,6 +6,7 @@ let audioElement = new Audio('1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
+let progress;
 
 let songs = [
 {songName: "salam-e-ishq",filepath:"song/1.mp3",coverPath:"covers/1.jpg"},
@@ -46,4 +47,12 @@ audioElement.addEventListener('timeupdate',()=>{
 
 myProgressBar.addEventListener('change',()=>{
     audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
+    if(progress == 100){
+        console.log("working");
+
+        masterPlay.classList.remove('fa-pause-circle');
+        masterPlay.classList.add('fa-play-circle');
+        gif.style.opacity = 0;
+
+    }
 })
