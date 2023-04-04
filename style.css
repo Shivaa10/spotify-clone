@@ -49,7 +49,7 @@ nav ul li{
     margin: 23px auto;
     border-radius: 12px;
     padding: 34px;
-    background-image: url("bg1.jpg");
+    background-image: url("bg2.jpg");
     background-size:cover;
 
 }
@@ -68,11 +68,13 @@ nav ul li{
 .icons{
     margin-top: 16px;
     
+    
 }
 
 #myProgressBar{
     width: 80vw;
     text-align: center;
+    cursor: pointer;
 }
 
 .songItemContainer{
@@ -82,9 +84,10 @@ nav ul li{
 .songItem{
     height:50px;
     display: flex;
-    background-color: white;
+    background-color: rgb(246, 242, 242);
+    opacity: 0.6;
     width: 80%;
-    color: black;
+    color: #fd0505;
     margin: 12 0;
     justify-content: space-between;
     align-items: center;
@@ -106,4 +109,16 @@ nav ul li{
 .timestamp i{
     cursor: pointer;
     
+}
+
+.songInfo{
+    color:aliceblue;
+    position: absolute;
+    left: 10vw;
+    margin-top: 10px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
